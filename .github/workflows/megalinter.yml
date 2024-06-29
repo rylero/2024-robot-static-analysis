@@ -1,0 +1,25 @@
+name: MegaLinter
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Mega-linter
+        uses: oxsecurity/megalinter/flavors/java@v7.12.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MEGALINTER_CONFIG: .github/.mega-linter.yml
+
+      - name: Upload MegaLinter scan results to GitHub Security tab
+        if: success() || failure()
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+            sarif_file: 'megalinter-reports/megalinter-report.sarif'
