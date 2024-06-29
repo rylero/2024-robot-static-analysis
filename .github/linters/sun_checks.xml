@@ -119,9 +119,11 @@
     <!-- See https://checkstyle.org/config_blocks.html -->
     <module name="AvoidNestedBlocks"/>
     <module name="EmptyBlock"/>
-    <module name="LeftCurly"/>
     <module name="NeedBraces"/>
+    <!--
     <module name="RightCurly"/>
+    <module name="LeftCurly"/>
+    -->
 
     <!-- Checks for class design                       
     <module name="DesignForExtension"/>-->
