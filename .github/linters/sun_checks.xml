@@ -131,9 +131,9 @@
     <!-- Miscellaneous other checks.
     <module name="ArrayTypeStyle"/>
     <module name="FinalParameters"/>
-    <module name="UpperEll"/>-->
+    -->
     <module name="TodoComment"/>
-    <module name="TrailingComment"/>
+    <module name="UpperEll"/>
 
     <!-- https://checkstyle.org/config_filters.html#SuppressionXpathFilter -->
     <module name="SuppressionXpathFilter">
@@ -153,23 +153,6 @@
     <module name="MultipleVariableDeclarations"/>
     <module name="SimplifyBooleanExpression"/>
     <module name="SimplifyBooleanReturn"/>
-
-    <!-- 
-    Checks for class design
-    <module name="DesignForExtension"/>
-    <module name="VisibilityModifier"/>
-    -->
-    <module name="FinalClass"/>
-    <module name="HideUtilityClassConstructor"/>
-    <module name="InterfaceIsType"/>
-
-    <!--
-    Miscellaneous other checks.
-    <module name="ArrayTypeStyle"/>
-    <module name="FinalParameters"/>
-    -->
-    <module name="TodoComment"/>
-    <module name="UpperEll"/>
 
     <!-- https://checkstyle.org/config_filters.html#SuppressionXpathFilter -->
     <module name="SuppressionXpathFilter">
