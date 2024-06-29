@@ -168,7 +168,6 @@
     <module name="ArrayTypeStyle"/>
     <module name="FinalParameters"/>
     -->
-    <module name="TrailingComment"/>
     <module name="TodoComment"/>
     <module name="UpperEll"/>
 
